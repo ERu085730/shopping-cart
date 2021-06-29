@@ -5,7 +5,8 @@
 -加入/刪除商品至購物車
 
 ## html/css:
--Sassy css(scss)
+-Sassy css(scss)</br>
+-RWD
 
 ## jascript:
 -es6 classes
