@@ -1,0 +1,79 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "name": "cake",
+      "src": "./src/img/cake-1.jpg",
+      "price": 180
+    },
+    {
+      "id": 2,
+      "name": "cake",
+      "src": "./src/img/cake-2.jpg",
+      "price": 190
+    },
+    {
+      "id": 3,
+      "name": "cake",
+      "src": "./src/img/cake-3.jpg",
+      "price": 200
+    },
+
+    {
+      "id": 4,
+      "name": "cupcake",
+      "src": "./src/img/cupcake-1.jpg",
+      "price": 180
+    },
+    {
+      "id": 5,
+      "name": "cupcake",
+      "src": "./src/img/cupcake-2.jpg",
+      "price": 190
+    },
+    {
+      "id": 6,
+      "name": "cupcake",
+      "src": "./src/img/cupcake-3.jpg",
+      "price": 200
+    },
+
+    {
+      "id": 7,
+      "name": "drink",
+      "src": "./src/img/drink-1.jpg",
+      "price": 180
+    },
+    {
+      "id": 8,
+      "name": "drink",
+      "src": "./src/img/drink-2.jpg",
+      "price": 190
+    },
+    {
+      "id": 9,
+      "name": "drink",
+      "src": "./src/img/drink-3.jpg",
+      "price": 200
+    },
+
+    {
+      "id": 10,
+      "name": "ice-cream",
+      "src": "./src/img/ice-cream-1.jpg",
+      "price": 180
+    },
+    {
+      "id": 11,
+      "name": "ice-cream",
+      "src": "./src/img/ice-cream-2.jpg",
+      "price": 190
+    },
+    {
+      "id": 12,
+      "name": "ice-cream",
+      "src": "./src/img/ice-cream-3.jpg",
+      "price": 200
+    }
+  ]
+}

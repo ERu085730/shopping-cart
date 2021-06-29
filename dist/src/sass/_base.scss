@@ -1,0 +1,74 @@
+// COLOR
+$color-primary: #f3b596;
+$color-primary-light: #fcd2bd;
+$color-secondary: #5a3c2c;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -210%);
+  }
+
+  80% {
+    transform: translate(-50%, -160%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -170%);
+  }
+}
+
+@mixin object-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px  -> 10px/16px = 62.5%
+}
+
+body {
+  background-color: $color-primary;
+  font-size: 1.6rem;
+  color: $color-secondary;
+  line-height: 1.6;
+  position: relative;
+}
+
+.container {
+  max-width: 140rem;
+  margin: 4rem auto;
+  border-radius: 10px;
+  background-color: $color-primary-light;
+  overflow: hidden;
+
+  @media only screen and (max-width: $bp-large) {
+    margin: 0 auto;
+  }
+
+  // display: flex;
+  // flex-direction: column;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
