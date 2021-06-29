@@ -12,7 +12,7 @@
   }
 
   &__list {
-    padding: 2rem 4rem;
+    // padding: 2rem 4rem;
     transition: all 0.5s;
 
     @media only screen and (max-width: $bp-large) {
@@ -22,6 +22,7 @@
     &--last {
       margin-left: auto;
       margin-right: 5vw;
+      position: relative;
 
       @media only screen and (max-width: $bp-large) {
         margin: 0;
@@ -30,6 +31,7 @@
   }
 
   &__item {
+    padding: 2rem 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,6 +47,7 @@
   }
 
   &__btn {
+    padding: 2rem 4rem;
     border: none;
     background: none;
 
@@ -57,18 +60,94 @@
     }
   }
 
-  &__list:hover {
+  &__list:hover,
+  &__item--active {
     background-color: $color-secondary;
   }
 
-  &__list:hover &__item {
+  &__list:hover &__item,
+  &__item--active {
     color: $color-primary;
   }
 
-  &__list:hover &__icon {
+  &__list:hover &__icon,
+  &__item--active &__icon {
     fill: $color-primary;
   }
 
+  &__list--last:hover &__cart {
+    opacity: 1;
+    visibility: visible;
+  }
   &__cart {
+    visibility: hidden;
+    opacity: 0;
+    background-color: $color-secondary;
+    position: absolute;
+    top: 7rem;
+    left: -15rem;
+    width: 200%;
+    transition: all 0.5s;
+
+    @media only screen and (max-width: $bp-large) {
+      opacity: 1;
+      visibility: visible;
+      position: relative;
+      width: 100%;
+      top: 0%;
+      left: 0%;
+    }
+
+    &__lists {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__list {
+      padding: 3rem 3rem 2rem 3rem;
+      display: grid;
+      grid-template-columns: min-content 1fr min-content;
+      grid-gap: 3rem;
+      align-items: center;
+    }
+
+    &__img {
+      width: 7rem;
+      height: 7rem;
+      border-radius: 50%;
+    }
+
+    &__text {
+      color: $color-primary;
+    }
+
+    &__btn {
+      background: none;
+      border: none;
+    }
+
+    &__icon {
+      width: 3rem;
+      height: 3rem;
+      fill: $color-primary;
+    }
+
+    &__total {
+      width: 100%;
+      letter-spacing: 0.2rem;
+      padding: 2rem;
+      text-align: center;
+      color: $color-primary;
+
+      &::before {
+        content: "";
+        width: 80%;
+        height: 1px;
+        margin: 0 auto 1rem auto;
+        background-color: $color-primary;
+        display: block;
+      }
+    }
   }
 }

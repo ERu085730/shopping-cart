@@ -10,7 +10,7 @@
   &__lists {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(max-content, 30rem));
+    grid-template-columns: repeat(auto-fit, minmax(max-content, 25rem));
     grid-gap: 3rem;
     align-items: center;
     justify-items: center;
@@ -31,6 +31,9 @@
   }
 
   &__img {
+    border: none;
+    background: none;
+    cursor: pointer;
     img {
       width: 100%;
       object-fit: cover;
@@ -50,16 +53,21 @@
     width: 3rem;
     height: 3rem;
     fill: $color-primary;
+    cursor: pointer;
 
     position: absolute;
     right: 1rem;
     bottom: 1rem;
+    transition: all 0.2s;
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 
   &__price {
     color: $color-primary;
 
     @include object-center;
-    transform: translate(-50%, 500%);
+    transform: translate(-50%, 350%);
   }
 }
