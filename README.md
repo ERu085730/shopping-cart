@@ -13,3 +13,6 @@
 
 ## Demo:
 https://shopping-cart-practice.netlify.app/
+
+## github:
+https://github.com/ERu085730/shopping-cart
